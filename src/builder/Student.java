@@ -45,32 +45,39 @@ public class Student {
         private String phoneNumber;
 
 
-        public void setId(int id) {
+        public Builder id(int id) {
             this.id = id;
+            return this;
         }
 
-        public void setName(String name) {
+        public Builder name(String name) {
             this.name = name;
+            return this;
         }
 
-        public void setUniversityName(String universityName) {
+        public Builder universityName(String universityName) {
             this.universityName = universityName;
+            return this;
         }
 
-        public void setGradYear(int gradYear) {
+        public Builder gradYear(int gradYear) {
             this.gradYear = gradYear;
+            return this;
         }
 
-        public void setPsp(int psp) {
+        public Builder psp(int psp) {
             this.psp = psp;
+            return this;
         }
 
-        public void setAge(int age) {
+        public Builder age(int age) {
             this.age = age;
+            return this;
         }
 
-        public void setPhoneNumber(String phoneNumber) {
+        public Builder phoneNumber(String phoneNumber) {
             this.phoneNumber = phoneNumber;
+            return this;
         }
 
         private void validate(){
@@ -140,4 +147,5 @@ public class A{
   }
 }
 ----------------------------------------------------------------------------
+Getters and setters are always called on an object level.
 */

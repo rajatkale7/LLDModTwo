@@ -1,4 +1,23 @@
 package builder;
 
-public class InvalidGradYearException {
+public class InvalidGradYearException extends RuntimeException{
+    //Below all are the constructors. fn+alt+insert and choose constructor from list
+    public InvalidGradYearException() {
+    }
+
+    public InvalidGradYearException(String message) {
+        super(message);
+    }
+
+    public InvalidGradYearException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public InvalidGradYearException(Throwable cause) {
+        super(cause);
+    }
+
+    public InvalidGradYearException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 }
