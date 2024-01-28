@@ -2,7 +2,7 @@ package builder;
 
 public class Main {
     public static void main(String[] args) {
-        Student s= Student.builder()
+        StudentAlternate s= StudentAlternate.builder()
                 .id(1)
                 .name("Rajat")
                 .age(19)
