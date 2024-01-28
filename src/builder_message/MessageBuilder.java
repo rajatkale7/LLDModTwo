@@ -8,7 +8,7 @@ public class MessageBuilder {
     private boolean isDelivered;
     private long timestamp;
 
-    private MessageBuilder(Builder builder){
+    private MessageBuilder(Builder builder){ //This is the constructor
         this.messageType=builder.getMessage();
         this.content=builder.getContent();
         this.sender=builder.getSender();
@@ -43,9 +43,6 @@ public class MessageBuilder {
             return this.timestamp;
         }
 
-
-
-
         public Builder setmessageType(MessageType type){
             this.messageType=type;
             return this;
@@ -78,7 +75,7 @@ public class MessageBuilder {
         }
 
         public MessageBuilder build(){
-            return new MessageBuilder(this);
+            return new MessageBuilder(this); //Only passed the object because we have provided the seperate methods
         }
     }
 
@@ -95,3 +92,5 @@ has become error-prone and challenging to maintain. You should streamline the cr
 message objects with different configurations and immutable objects.
 
  */
+
+//Alternate solution for above problem exactly similar to the design
