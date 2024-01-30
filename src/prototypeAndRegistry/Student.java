@@ -1,6 +1,6 @@
 package prototypeAndRegistry;
 
-public class Student {
+public class Student implements Prototype<Student>{
     private String name;
     private String email;
     private String phoneNumber;
@@ -34,8 +34,7 @@ public class Student {
         this.moduleSchedule = student.moduleSchedule;
         this.moduleEndDate = student.moduleEndDate;
     }
-    //Above is the copy_constructor. Copying attribute values from current object and giving it to
-    //the object in the parenthesis
+
 
     @Override
     public Student clone(){
@@ -59,4 +58,87 @@ public class Student {
     }
     //Above method is just for printing purpose
 
+    //Below are the getters-->
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getYearOfEnrollment() {
+        return yearOfEnrollment;
+    }
+
+    public String getBatchName() {
+        return batchName;
+    }
+
+    public String getModuleName() {
+        return moduleName;
+    }
+
+    public String getInstructorName() {
+        return instructorName;
+    }
+
+    public String getModuleStartDate() {
+        return moduleStartDate;
+    }
+
+    public String getModuleSchedule() {
+        return moduleSchedule;
+    }
+
+    public String getModuleEndDate() {
+        return moduleEndDate;
+    }
+
+    //Below are the setters
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setYearOfEnrollment(String yearOfEnrollment) {
+        this.yearOfEnrollment = yearOfEnrollment;
+    }
+
+    public void setBatchName(String batchName) {
+        this.batchName = batchName;
+    }
+
+    public void setModuleName(String moduleName) {
+        this.moduleName = moduleName;
+    }
+
+    public void setInstructorName(String instructorName) {
+        this.instructorName = instructorName;
+    }
+
+    public void setModuleStartDate(String moduleStartDate) {
+        this.moduleStartDate = moduleStartDate;
+    }
+
+    public void setModuleSchedule(String moduleSchedule) {
+        this.moduleSchedule = moduleSchedule;
+    }
+
+    public void setModuleEndDate(String moduleEndDate) {
+        this.moduleEndDate = moduleEndDate;
+    }
 }

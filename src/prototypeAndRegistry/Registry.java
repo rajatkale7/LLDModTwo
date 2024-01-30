@@ -1,7 +1,5 @@
 package prototypeAndRegistry;
 
-import builder.Student;
-
 import java.util.HashMap;
 
 public class Registry {
@@ -10,9 +8,9 @@ public class Registry {
     public Registry() {
         this.templateBox = new HashMap<>();
     }
-    public Student addToTemplateBox(Student s){
-        templateBox.put(s.getBatchName(),s);
-        return s;
+    public Student addToMap(Student studentPrototype){
+        templateBox.put(studentPrototype.getBatchName(), studentPrototype);
+        return studentPrototype;
     }
     public Student giveTemplate(String batchName){
         return templateBox.get(batchName);
