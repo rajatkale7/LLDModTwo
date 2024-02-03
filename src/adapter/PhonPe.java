@@ -15,10 +15,10 @@ public class PhonPe {
     }
 
     public void transferMoney(User fromUser, User toUser, double amount){
-        if(BankAPI.checkBalance(fromUser)<amount){
+        if(bankAPI.checkBalance(fromUser)<amount){
             System.out.println("Transaction failed");
         }
-        int status= BankAPI.doTransaction(fromUser,toUser,amount);
+        int status= bankAPI.doTransaction(fromUser,toUser,amount);
         switch(status){
             case 1:
                 System.out.println("success");
