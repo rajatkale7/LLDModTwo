@@ -1,0 +1,22 @@
+Let's say I have my codebase which is connected to some cloud services.
+
+CODEBASE <------> ADAPTER <------> CLOUD
+This is what Adapter has to do. My codebase is designed in such a way that it cares about the adapter
+and hence even if I switch from GCP to Azure, There will not be any single change in the Codebase
+making it more adaptable to new cloud platform.
+---------------------------------------------------------------------------------------------------
+DATABASE:
+This is not an adapter because entire business logic depends on DB.
+If we move from MySQL to Maria DB, entire Codebase changes.
+So there is very hardcore dependency and tight coupling between my Codebase and
+database.
+---------------------------------------------------------------------------------------------------
+Whenever you are interacting with third party applications/services, Never connect directly,
+connect via interface
+WHY--> To obey Dependency Inversion principle(DIP) & OCP
+---------------------------------------------------------------------------------------------------
+ADAPTER-->
+
+[Phonpe Class] <---> {BankAPI Interface} <-----> [YesBank Class]
+
+{BankAPI}--> has all the methods that Phonpe needs to function
