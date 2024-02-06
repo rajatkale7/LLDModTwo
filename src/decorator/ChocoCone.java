@@ -20,10 +20,10 @@ public class ChocoCone implements IceCream{
     @Override
     public String getDescription() {
         if(iceCream != null) {
-            return iceCream.getDescription() + ", Chocolate Cone";
+            return iceCream.getDescription() + ", extra Chocolate Cone";
         }
         else {
-            return "Chocolate Cone";
+            return "Outer Chocolate Cone";
         }
     }
 }

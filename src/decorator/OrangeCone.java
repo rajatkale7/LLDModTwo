@@ -24,7 +24,7 @@ public class OrangeCone implements IceCream{
             return iceCream.getDescription() + ", OrangeCone ";
         }
         else {
-            return "OrangeCone";
+            return "outer OrangeCone";
         }
     }
 }
