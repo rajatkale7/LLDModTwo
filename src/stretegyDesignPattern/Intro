@@ -1,0 +1,6 @@
+This design pattern is used when you have multiple ways to reach
+from point A to point B.
+------------------------------------------------------------------
+Example: Google Maps.
+say I want to go from yavatmal to conoor. then map will give me options-
+by train, by road, bike and footsteps
