@@ -1,4 +1,4 @@
-package stretegyDesignPattern;
+package stretegy;
 
 public class BikePathCalculator implements PathCalculator{
     public void findPath(String source, String destination) {

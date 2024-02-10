@@ -1,4 +1,4 @@
-package stretegyDesignPattern;
+package stretegy;
 
 public enum Mode {
     CAR, BIKE, WALK;

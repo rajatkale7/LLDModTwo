@@ -1,4 +1,4 @@
-package stretegyDesignPattern;
+package stretegy;
 
 public class PathCalculatorFactory {   //This class generates objects.
     public static PathCalculator getPathCalculator(Mode mode){
