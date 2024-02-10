@@ -4,3 +4,13 @@ from point A to point B.
 Example: Google Maps.
 say I want to go from yavatmal to conoor. then map will give me options-
 by train, by road, bike and footsteps
+------------------------------------------------------------------
+Package Structure:
+
+PathCalculator(I)<---- WalKPathCalculator(C), BikePathCalculator(C), CarPathCalculator(C)
+
+PathCalculatorFactory(C): used to make objects.
+
+Mode(E): constants
+
+Maps: get the path object using Mode --> object.method for generating path
