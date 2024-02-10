@@ -1,8 +1,4 @@
 When this DP?
 -I want to do many things after this event happens.
 Example: AMAZON--> When user places order successfully then only generate Invoice,send SMS, send Email
-------------------------------------------------------------------------------------------------------
-Publisher &Subscriber-->
-Event occurs at publisher's side and subscribers gets notified and subscribers may do actions
-
 
