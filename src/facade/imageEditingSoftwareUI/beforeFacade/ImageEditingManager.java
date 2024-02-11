@@ -25,6 +25,8 @@ public class ImageEditingManager {
 
         imageWriter.saveImage(image);
         analyticsService.store(image);
+
+        //Why user need to call these much methods? make it modular using facade
     }
 
 }
