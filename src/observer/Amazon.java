@@ -16,8 +16,7 @@ public class Amazon {  //This is our publisher
         afterOrderPlacedServices.add(o);
     }
     public void removeAfterOrderPlacedService(OrderPlaced name){
-        afterOrderPlacedServices.remove(name);         //special type of remove() for object as input instead of index
+        afterOrderPlacedServices.remove(name);
+        //special type of remove() for object as input instead of index
     }
-
-
 }
