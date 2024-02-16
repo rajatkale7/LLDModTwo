@@ -9,7 +9,7 @@ public class Amazon {  //This is our publisher
 
     public void orderIsPlaced(){
         for(OrderPlaced o: afterOrderPlacedServices){
-            o.orderPlacedEvent();
+            o.orderPlacedEvent();   //List stores the classes. So, class.method()
         }
     }
     public void addAfterOrderPlacedService(OrderPlaced o){
