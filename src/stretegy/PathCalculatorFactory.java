@@ -9,6 +9,5 @@ public class PathCalculatorFactory {   //This class generates objects.
             default -> null;
         };
         //Above switch case is from Lambda expression-Latest JAVA version
-
     }
 }
