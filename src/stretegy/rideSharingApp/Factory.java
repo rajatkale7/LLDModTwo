@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public class Factory {
     public static PricingStrategy getStrategy(PricingType pricingType){

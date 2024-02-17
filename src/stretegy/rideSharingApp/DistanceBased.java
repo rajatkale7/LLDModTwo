@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public class DistanceBased implements PricingStrategy{
     public PricingType supportsType(){

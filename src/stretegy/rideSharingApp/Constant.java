@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public class Constant {
     public static final double BASE_FARE = 5.0; // Base fare amount

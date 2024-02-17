@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public interface PricingStrategy {
     public PricingType supportsType();

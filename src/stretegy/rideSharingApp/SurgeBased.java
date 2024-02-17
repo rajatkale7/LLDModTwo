@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public class SurgeBased implements PricingStrategy{
     public PricingType supportsType(){

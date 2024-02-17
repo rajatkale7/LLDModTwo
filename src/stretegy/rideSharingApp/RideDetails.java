@@ -1,4 +1,4 @@
-package observer.rideSharingApp;
+package stretegy.rideSharingApp;
 
 public class RideDetails {
     private double distance; // Distance in kilometers
