@@ -4,9 +4,8 @@ public class PricingManager {
     private PricingType pt;
     private PricingStrategy ps;
 
-    public PricingManager(PricingType pt, PricingStrategy ps) {
+    public PricingManager(PricingType pt) {
         this.pt= pt;
-        this.ps=ps;
     }
 
     public Double calculatePrice(RideDetails rideDetails) {
