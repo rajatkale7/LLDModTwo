@@ -1,8 +1,4 @@
 package observer.youTubeSystem;
-
-import javax.naming.OperationNotSupportedException;
-import java.security.spec.DSAPublicKeySpec;
-
 public class Main {
     public static void main(String[] args) {
         PublisherOne one=new PublisherOne();
