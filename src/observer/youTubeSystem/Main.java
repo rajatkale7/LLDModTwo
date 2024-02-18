@@ -9,7 +9,7 @@ public class Main {
         ObserverTwo user2= new ObserverTwo();
         ObserverThree user3= new ObserverThree();
 
-        //Let is now subscribe
+        //Let us now subscribe
         one.subscribe(user1);
         one.subscribe(user2);
         one.subscribe(user3);
