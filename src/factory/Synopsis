@@ -3,13 +3,42 @@ There are three things in factory
 [2] Abstract factory
 [3] Practical factory
 
--------------------------------------------
-Suppose there is an interface <<CarMilage>>
-with an method [Car getData()]
+---------------------------------------------------------------------
+Suppose, there is an interface <<CarMilage>>
+with an method [public Car getData()]
 
 Say three classes with implement above interface
-[[Maruti implements CarMilage]] method [Maruti getData()]
-[[Tata implements CarMilage]] method [Tata getData()]
-[[Skoda implements CarMilage]] method [Skoda getData()]
+[[Maruti implements CarMilage]] method [public Maruti getData()]
+[[Tata implements CarMilage]] method [public Tata getData()]
+[[Skoda implements CarMilage]] method [public Skoda getData()]
 
-But interface method has return type as
+issue-->
+But interface method has return type as "Car"
+and all three classes are returning different.
+
+Solution-->
+create a parent as [[Car]] with childs as Maruti, Tata, skoda
+So, return Car or childs of Car.
+
+----------------------------------------------------------------------
+Consider an Database Interface with few methods
+<<>Database>>
+[createQuery()]
+[changePoolSize()]
+[connect()]
+
+Out of above three, createQuery() is responsible to create and
+return Query object.
+
+So, A method whose only purpose is to create and return an object
+example: getInstance() is similar to this. not same
+clone() method from prototype is factory method.
+
+----------------------------------------------------------------------
+Abstract Factory says that divide the classes into two parts
+1. All the basic functionalities
+2. all the factory methods
+----------------------------------------------------------------------
+**Practical factory-->
+
+
