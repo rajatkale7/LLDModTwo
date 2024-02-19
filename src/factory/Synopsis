@@ -2,3 +2,14 @@ There are three things in factory
 [1] Factory methods
 [2] Abstract factory
 [3] Practical factory
+
+-------------------------------------------
+Suppose there is an interface <<CarMilage>>
+with an method [Car getData()]
+
+Say three classes with implement above interface
+[[Maruti implements CarMilage]] method [Maruti getData()]
+[[Tata implements CarMilage]] method [Tata getData()]
+[[Skoda implements CarMilage]] method [Skoda getData()]
+
+But interface method has return type as
