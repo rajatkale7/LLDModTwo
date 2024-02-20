@@ -14,4 +14,20 @@ public class Flutter {
     public void setRefreshRate(){
         System.out.println("Refresh rate is being set");
     }
+
+    public UIFactory createUIfactory(){
+        //Version-2:
+//        if(supportedPlatforms.equals(supportedPlatforms.IOS)){
+//            return new IOSFactory();
+//        }
+//        else {
+//            return new AndroidFactory();
+//        }
+
+        //But if Mac is added as an supported platform then OCP violation happens
+        //To do this we will have a hack.
+
+        //Below is the neat code so that we need tot to make changes here if Mac platform comes into role
+        return UIFactoryFactory.getUIFactory(supportedPlatforms);
+    }
 }
