@@ -24,10 +24,10 @@ public class Flutter {
 //            return new AndroidFactory();
 //        }
 
-        //But if Mac is added as an supported platform then OCP violation happens
+        //But if Mac is added as a supported platform then OCP violation happens
         //To do this we will have a hack.
 
-        //Below is the neat code so that we need tot to make changes here if Mac platform comes into role
+        //Below is the neat code so that we need not to make changes here if Mac platform comes into role
         return UIFactoryFactory.getUIFactory(supportedPlatforms);
     }
 }
