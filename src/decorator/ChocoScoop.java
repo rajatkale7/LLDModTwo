@@ -7,7 +7,7 @@ public class ChocoScoop implements IceCream{
     }
 
     public int getCost(){
-        return iceCream.getCost()+23;
+        return iceCream.getCost()+24;
     }
     public String getDescription(){
         return iceCream.getDescription()+", ChocoScoop";

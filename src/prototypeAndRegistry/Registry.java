@@ -8,9 +8,8 @@ public class Registry {
     public Registry() {
         this.templateBox = new HashMap<>();
     }
-    public Student addToMap(Student studentPrototype){
+    public void addToMap(Student studentPrototype){
         templateBox.put(studentPrototype.getBatchName(), studentPrototype);
-        return studentPrototype;
     }
     public Student giveTemplate(String batchName){
         return templateBox.get(batchName);

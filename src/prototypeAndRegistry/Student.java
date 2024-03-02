@@ -25,7 +25,7 @@ public class Student implements Prototype<Student>{
     //Because the user will add it at the time of using the template(name,email,phoneNumber changes for every candidate
     //remaining everything same for perticular batch)
 
-    public Student(Student student) {
+    public Student(Student student) {  //copy constructor to make deep copy
         this.yearOfEnrollment = student.yearOfEnrollment;
         this.batchName = student.batchName;
         this.moduleName = student.moduleName;
@@ -38,7 +38,7 @@ public class Student implements Prototype<Student>{
 
     @Override
     public Student clone(){
-        return new Student(this);
+        return new Student(this);  //Means copy everything from this to student
     }
 
     @Override
