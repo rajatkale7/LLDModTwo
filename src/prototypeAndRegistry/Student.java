@@ -38,7 +38,7 @@ public class Student implements Prototype<Student>{
 
     @Override
     public Student clone(){
-        return new Student(this);  //Means copy everything from this to student
+        return new Student(this);  //Means copy everything from "this" to "student" which is new blank.
     }
 
     @Override
@@ -56,14 +56,10 @@ public class Student implements Prototype<Student>{
                 ", moduleEndDate='" + moduleEndDate + '\'' +
                 '}';
     }
-    //Above method is just for printing purpose
-
-    //Below are the getters-->
-
     public String getName() {
         return name;
     }
-
+    
     public String getEmail() {
         return email;
     }
@@ -99,8 +95,6 @@ public class Student implements Prototype<Student>{
     public String getModuleEndDate() {
         return moduleEndDate;
     }
-
-    //Below are the setters
 
     public void setName(String name) {
         this.name = name;
