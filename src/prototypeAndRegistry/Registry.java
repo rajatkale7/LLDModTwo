@@ -17,7 +17,7 @@ public class Registry {
     /*
     The giveTemplate():
     method is actually been called in the Main.
-    Say user want to add new entry of the candidate in perticular batch say A
+    Say user want to add new entry of the candidate in particular batch say A
     then user will pass A in the method. method will look for key A in the map
     and return that template.The value against the key string is class Student(template)
     so we are returning it.
