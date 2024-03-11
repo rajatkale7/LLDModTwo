@@ -59,7 +59,6 @@ public class Student implements Prototype<Student>{
     public String getName() {
         return name;
     }
-    
     public String getEmail() {
         return email;
     }
